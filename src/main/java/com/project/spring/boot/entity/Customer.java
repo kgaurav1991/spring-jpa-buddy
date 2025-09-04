@@ -1,19 +1,14 @@
 package com.project.spring.boot.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.*;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
-@Getter
-@Setter
-@Entity
 @Data
 @Table(name = "customer")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
     @Id
     @Column(nullable = false)
